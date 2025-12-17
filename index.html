@@ -5,12 +5,12 @@
   <!-- Basic metadata -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>World Association for Political Economy — 2026 Conference Site</title>
-  <meta name="description" content="Official conference website of the World Association for Political Economy" />
+  <title>World Association for Political Economy — Conference Site</title>
+  <meta name="description" content="Official conference website of World Association for Political Economy" />
 
   <!-- Open Graph (social sharing) -->
-  <meta property="og:title" content="World Association for Political Economy — 2026 Conference Site" />
-  <meta property="og:description" content="Official conference website of the World Association for Political Economy" />
+  <meta property="og:title" content="World Association for Political Economy — Conference Site" />
+  <meta property="og:description" content="Official conference website of World Association for Political Economy" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://World-Association-for-Political-Economy.github.io/" />
   <meta property="og:image" content="https://World-Association-for-Political-Economy.github.io/assets/og-image.jpg" />
@@ -64,3 +64,248 @@
 
     /* Mobile menu */
     .menu-toggle { display: none; background: transparent; border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px; }
+    .menu-toggle span { display: block; width: 22px; height: 2px; background: var(--text); margin: 5px 0; }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(180deg, var(--primary-50), #ffffff 70%);
+      padding: 80px 0 40px;
+    }
+    .hero-inner { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center; }
+    .hero h1 { font-size: clamp(28px, 4.2vw, 44px); margin: 0 0 12px; }
+    .hero p { color: var(--muted); font-size: 18px; line-height: 1.6; }
+    .hero-actions { display: flex; gap: 12px; margin-top: 18px; flex-wrap: wrap; }
+    .ghost-btn { padding: 10px 16px; border: 1px solid var(--border); border-radius: 8px; font-weight: 600; color: var(--text); background: #fff; }
+    .ghost-btn:hover { border-color: var(--text); }
+
+    .hero-card {
+      border: 1px solid var(--border); border-radius: 12px; padding: 18px; background: #fff; box-shadow: var(--shadow);
+    }
+    .hero-card h3 { margin-top: 0; }
+    .stat { display: grid; grid-template-columns: auto 1fr; gap: 8px 14px; align-items: center; margin: 12px 0; }
+    .stat .num { font-size: 24px; font-weight: 700; color: var(--primary); }
+
+    /* ===== FEATURES ===== */
+    .section { padding: 60px 0; }
+    .section h2 { font-size: clamp(24px, 3.2vw, 34px); margin-bottom: 12px; }
+    .section p.lead { color: var(--muted); margin-top: 0; }
+    .grid-3 {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 24px;
+    }
+    .card {
+      border: 1px solid var(--border); border-radius: 12px; padding: 18px; background: #fff; box-shadow: var(--shadow);
+    }
+    .card h3 { margin: 0 0 8px; }
+    .card p { color: var(--muted); }
+
+    /* ===== ABOUT ===== */
+    .about {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 26px;
+    }
+    .about img { border-radius: 12px; border: 1px solid var(--border); }
+
+    /* ===== CTA STRIP ===== */
+    .cta {
+      background: #0b5fff; color: #fff; padding: 36px 0; text-align: center;
+    }
+    .cta h3 { margin: 0 0 8px; }
+    .cta p { margin: 0 0 16px; opacity: 0.9; }
+    .cta .cta-btn { background: #fff; color: #0b5fff; }
+    .cta .cta-btn:hover { background: #eef2ff; }
+
+    /* ===== FOOTER ===== */
+    footer {
+      border-top: 1px solid var(--border); padding: 28px 0; color: var(--muted);
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 22px;
+    }
+    .footer-grid h4 { margin: 0 0 10px; color: var(--text); }
+    .small { font-size: 14px; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 980px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .about { grid-template-columns: 1fr; }
+      .grid-3 { grid-template-columns: 1fr 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .menu-toggle { display: inline-flex; }
+      .grid-3 { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header role="banner">
+    <div class="container nav">
+      #
+        <!-- Optional logo: add /assets/logo.png -->
+        <img src="/assets/logo.png" alt="Organization logo"pan>
+      </a>
+
+      <nav aria-label="Primary">
+        <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+          #aboutAbout</a>
+          <a href="#programmess</a>
+          #researchResearch</a>
+          #contactContact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MOBILE MENU ===== -->
+  <div id="mobile-menu" hidden>
+    <div class="container" style="padding:12px 20px; border-bottom:1px solid var(--border);">
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        #aboutAbout</a>
+        #programmesProgrammes</a>
+        #researchResearch</a>
+        <a href="#contact" class="cta-btn" style="align-self:flex-start=== HERO ===== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <h1>Advancing Political Economy</h1>
+        <p>
+          We are a collaborative academic organization focused on political economy.
+        </p>
+        <div class="hero-actions">
+          #contactGet in touch</a>
+          #researchExplore research</a>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Highlights">
+        <h3>At a glance</h3>
+        <div class="stat"><div class="num">25+</div><div>Partner Institutions</div></div>
+        <div class="stat"><div class="num">120+</div><div>Published Articles</div></div>
+        <div class="stat"><div class="num">8</div><div>Global Programmes</div></div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES / PROGRAMMES ===== -->
+  <section id="programmes" class="section">
+    <div class="container">
+      <h2>What we do</h2>
+      <p class="lead">Programmes and initiatives that bridge research and practice.</p>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>Teaching & Curriculum</h3>
+          <p>Innovative modules in international business, strategy, and analytics.</p>
+        </div>
+        <div class="card">
+          <h3>Research Labs</h3>
+          <p>Social network analysis, global value chains, and digital platforms.</p>
+        </div>
+        <div class="card">
+          <h3>Industry Partnerships</h3>
+          <p>Collaborations with firms and NGOs to apply research in practice.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section" aria-labelledby="about-title">
+    <div class="container about">
+      <div>
+        <h2 id="about-title">About Us</h2>
+        <p class="lead">We’re a multidisciplinary team supporting impactful research and learning.</p>
+        <p>
+          Our mission is to connect theory and practice in international business through evidence-based teaching,
+          rigorous research, and partnerships. We foster collaborative projects and a global learning community.
+        </p>
+        <ul>
+          <li>Focus on network analysis and global strategy.</li>
+          <li>Open-source resources and reproducible research.</li>
+          <li>Student and practitioner engagement.</li>
+        </ul>
+      </div>
+      <div>
+        <!-- Optional banner image: add /assets/about.jpg -->
+        <img src="/assets/about.jpg" alt="Students collaborating in an international business seminar" onerror="this.style.display='none'aria-labelledby="research-title">
+    <div class="container">
+      <h2 id="research-title">Recent Research</h2>
+      <p class="lead">Selected outputs from our team and collaborators.</p>
+
+      <div class="grid-3">
+        <article class="card" aria-labelledby="r1">
+          <h3 id="r1">Networks & Innovation</h3>
+          <p>Examining how inter-firm ties shape innovation performance across regions.</p>
+          <p class="small">#Read working paper →</a></p>
+        </article>
+        <article class="card" aria-labelledby="r2">
+          <h3 id="r2">Global Value Chains</h3>
+          <p>Mapping governance and upgrading trajectories in global industries.</p>
+          <p class="small">#Open dataset →</a></p>
+        </article>
+        <article class="card" aria-labelledby="r3">
+          <h3 id="r3">Digital Platforms</h3>
+          <p>Implications of platform-mediated networks for competition and policy.</p>
+          <p class="small">#Journal article →</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA STRIP ===== -->
+  <section class="cta" aria-labelledby="cta-title">
+    <div class="container">
+      <h3 id="cta-title">Interested in collaborating?</h3>
+      <p>We welcome partnerships for teaching, research, and outreach.</p>
+      #contactContact us</a>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / FOOTER ===== -->
+  <footer id="contact" role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <h4>Contact</h4>
+        <p class="small">Email: mailto:info@your-org.exampleinfo@your-org.example</a></p>
+        <p class="small">Address: Business School, Greenwich</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <p class="small">#Prospectus</a></p>
+        <p class="small">#Events</a></p>
+        <p class="small"><a hrefces</a></p>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <p class="small">#LinkedIn</a></p>
+        <p class="small">#X (Twitter)</a></p>
+        <p class="small">#YouTube</a></p>
+      </div>
+    </div>
+    <div class="container" style="margin-top:10px;">
+      <p class="small">© <span id="year"></span> Your Organization. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle (accessible)
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.set        toggle.setAttribute('aria-expanded', String(!expanded));
+        menu.hidden = expanded;
+      });
+    }
+  </script>
+</body>
+
