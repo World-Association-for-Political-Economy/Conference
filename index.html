@@ -16,7 +16,12 @@
   <meta property="og:image" content="https://your-org.github.io/Conference/assets/og-image.jpg">
 
   <!-- Favicon -->
-  assets/favicon.png
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- Additional favicon sizes for different devices -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 
   <style>
     /* ===== Base & Theme ===== */
@@ -47,7 +52,10 @@
     }
     .nav { height: 72px; display: flex; align-items: center; justify-content: space-between; }
     .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: 0.3px; }
-    .brand img { width: 96px; height: 96px; border-radius: 4px; }
+    .brand img {
+      width: clamp(48px, 5vw, 64px); /* Responsive between 48px and 64px */
+      height: auto;
+      border-radius: 4px; }
     .brand span { color: var(--primary); }
     .nav-links { display: flex; gap: 22px; align-items: center; }
     .nav-links a { color: #334155; font-weight: 500; }
