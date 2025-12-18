@@ -14,10 +14,8 @@
   <meta property="og:url" content="https://your-org.github.io/Conference">
   <meta property="og:image" content="https://your-org.github.io/Conference/assets/og-image.jpg">
 
-  <!-- Favicon (optional) -->
-  assets/favicon.png
-
-  <style>
+  <!-- Favicon -->
+  <link rel="icon" href="style>
     /* ===== Base & Theme ===== */
     *, *::before, *::after { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -46,7 +44,7 @@
     }
     .nav { height: 64px; display: flex; align-items: center; justify-content: space-between; }
     .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: 0.2px; }
-    .brand img { width: 96px; height: 96px; border-radius: 6px; }
+    .brand img { width: 40px; height: 40px; border-radius: 6px; }
     .nav-links { display: flex; gap: 22px; align-items: center; }
     .nav-links a { color: var(--muted); font-weight: 500; }
     .nav-links a:hover { color: #000; }
@@ -121,9 +119,9 @@
   <!-- ===== Header / Nav ===== -->
   <header role="banner">
     <div class="container nav">
-        <!-- Optional logo: /assets/wape-logo.png -->
-        assets/wape-logo.png
-        <span>WAPE Annual Conference</span>
+      #
+        <!-- Optional logo -->
+        <img src="assets/wape-logo.png" altWAPE Annual Conference</span>
       </a>
 
       <nav aria-label="Primary">
@@ -132,9 +130,9 @@
         </button>
         <div class="nav-links">
           #cfpCall for Papers</a>
-          #venueVenue</a>
-          #programmeProgramme</a>
-          #registrationRegistration</a>
+          <a href="#e</a>
+          <arogrammeProgramme</a>
+          <a href="#ionRegister</a>
         </div>
       </nav>
     </div>
@@ -157,16 +155,14 @@
     <div class="container hero-inner">
       <div>
         <div class="eyebrow">August 5–7 · University of Greenwich · London</div>
-        <h1 id="hero-title">World Association for Political EconomyAnnual Conference</h1>
-        <h1 id="hero-title">2026 Annual Conference</h1>
+        <h1 id="hero-title">World Association for Political Economy — Annual Conference 2026</h1>
         <p>
           Join scholars, students, and practitioners for three days of keynotes, panels, and networking
           at the historic Greenwich campus overlooking the Thames. Explore political economy across disciplines,
           regions, and methods with a focus on contemporary global challenges.
         </p>
         <div class="hero-actions">
-          #registrationRegister now</a>
-          #cfpSubmit your paper</a>
+          <a href="#registration" class="cta-btn  <a href="#cfour paper</a>
         </div>
       </div>
 
@@ -218,7 +214,7 @@
         <div class="card">
           <h3>Location</h3>
           <p>Old Royal Naval College, Greenwich, London SE10 9LS. Main sessions in Business School buildings.</p>
-          <p class="small">https://maps.google.com?q=University+of+Greenwich+Greenwich+CampusView on Google Maps →</a></p>
+          <p class="small"><a href="https://maps.google.com?q=University+of+Greenwich+Greenwich+Campus" target="_→</a></p>
         </div>
         <div class="card">
           <h3>Travel</h3>
@@ -233,15 +229,10 @@
   </section>
 
   <!-- ===== Venue Strip ===== -->
-  <div class="venue-strip">
+  <div class="venue-strip" aria-label="Greenwich campus image">
     <div class="container">
-      <!-- Optional venue image: /assets/greenwich.jpg -->
-      /assets/greenwich.jpg
-    </div>
-  </div>
-
-  <!-- ===== Programme ===== -->
-  <section id="programme" class="section" aria-labelledby="programme-title">
+      <!-- Optional venue image -->
+      <img src="assets/greenwich.jpg" alt="University of Greenwich campus at Old Royalction id="programme" class="section" aria-labelledby="programme-title">
     <div class="container">
       <h2 id="programme-title">Programme (Draft)</h2>
       <p class="lead">A mix of keynotes, parallel sessions, and thematic roundtables.</p>
@@ -303,7 +294,7 @@
         <div class="card">
           <h3>Register Online</h3>
           <p>Secure payment and abstract submission via the portal.</p>
-          <p class="small">#Open registration portal →</a></p>
+          <p class="small"><a href="#" aria-label="Open/a></p>
         </div>
       </div>
     </div>
@@ -314,23 +305,19 @@
     <div class="container footer-grid">
       <div>
         <h4>Contact</h4>
-        <p class="small">Email: mailto:conference@wape.exampleconference@wape.example</a></p>
+        <p class="small"><a href="mailto:conference@wape.examplenference@wape.example</a></p>
         <p class="small">Host: University of Greenwich, London</p>
       </div>
       <div>
         <h4>Quick Links</h4>
         <p class="small">#cfpCall for Papers</a></p>
-        <p class="small">#venueVenue</a></p>
+        <p class="small"><a href="#e</a></p>
         <p class="small">#programmeProgramme</a></p>
         <p class="small">#registrationRegistration</a></p>
       </div>
       <div>
         <h4>Follow</h4>
-        <p class="small">#Twitter/X</a></p>
-        <p class="small">#LinkedIn</a></p>
-        <p class="small">#YouTube</a></p>
-      </div>
-    </div>
+        <p class="small"><a href="#" aria-label="Twitter/Xss="small"><a href="#" aria-label="LinkedInss="small"><a href="#" aria-label="YouTube   </div>
     <div class="container" style="margin-top:10px;">
       <p class="small">© <span id="year"></span> WAPE. All rights reserved.</p>
     </div>
@@ -348,8 +335,7 @@
         const expanded = toggle.getAttribute('aria-expanded') === 'true';
         toggle.setAttribute('aria-expanded', String(!expanded));
         menu.hidden = expanded;
-      });
+           });
     }
   </script>
 </body>
-</html>
