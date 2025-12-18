@@ -15,7 +15,7 @@
   <meta property="og:image" content="https://your-org.github.io/assets/og-image.jpg">
 
   <!-- Favicon (optional) -->
-  assets/favicon.ico
+  assets/favicon.png
 
   <style>
     /* ===== Base & Theme ===== */
@@ -118,41 +118,80 @@
   </style>
 </head>
 <body>
-  <!-- ===== Header / Nav ===== -->
-  <header role="banner">
-    <div class="container nav">
-        <!-- Optional logo: /assets/wape-logo.png -->
-        <a class="brand"o image (will hide itself if missing) -->
-        <img src="assets/wape-logo.png"
-           alt="WAPE logo"
-           class="logo"
-           onerror="this.style.display='none's</a>
-      </a>
-      <span>WAPE Annual Conference</span>
+ 
+<!-- ===== Header / Navigation (with inline styles) ===== -->
+<header role="banner">
+  <!-- Inline styles scoped to the header -->
+  <style>
+    /* Layout helpers for the header area */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    .nav { height: 64px; display: flex; align-items: center; justify-content: space-between; }
+    header { position: sticky; top: 0; background: #fff; border-bottom: 1px solid #e5e7eb; z-index: 50; }
 
-      <nav aria-label="Primary">
-        <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </button>
-        <div class="nav-links">
-          #cfpCall for Papers</a>
-          #venueVenue</a>
-          #programmeProgramme</a>
-          #registrationRegistration</a>
-        </div>
-      </nav>
-    </div>
-  </header>
+    /* Brand block (logo + title) */
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;              /* spacing between logo and title */
+      font-weight: 700;
+      color: #17202a;
+      text-decoration: none;  /* make the whole brand clickable without underline */
+    }
 
-  <!-- ===== Mobile Menu ===== -->
-  <div id="mobile-menu" hidden>
-    <div class="container" style="padding:12px 20px; border-bottom:1px solid var(--border);">
-      <div style="display:flex; flex-direction:column; gap:12px;">
-        <a hrefl for Papers</a>
-        #venueVenue</a>
-        #programmeProgramme</a>
-        <a href="#registration" class="cta-btn" style="</div>
+    /* Logo size & alignment — adjust as you like */
+    img.logo {
+      width: 96px;            /* try 72, 96, 120px, etc. */
+      height: auto;           /* keep aspect ratio */
+      vertical-align: middle;
+      border-radius: 6px;     /* optional, if your logo is square */
+    }
+
+    /* Navigation links */
+    header nav a {
+      margin-left: 18px;
+      color: #5f6a72;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    header nav a:hover { color: #000; }
+
+    /* Registration button style */
+    .cta-btn {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-weight: 600;
+      color: #fff;
+      background: #0b5fff;
+    }
+    .cta-btn:hover { background: #0a4ee0; }
+
+    /* Optional: responsive tweak for smaller screens */
+    @media (max-width: 640px) {
+      img.logo { width: 72px; }
+      header nav a { margin-left: 12px; }
+    }
+  </style>
+
+  <div class="container nav">
+    <!-- Brand (logo + title) -->
+    /
+      assets/wape-logo.png
+        alt="WAPE logo"
+        class="logo"
+        onerror="this.style.display='none'">
+      <span>WAPE Annual Conference 5-7 Aug 2006</span>
+    </a>
+
+    <!-- Primary navigation -->
+    <nav aria-label="Primary    <nav aria-label="Primary">
+      #cfpCall for Papers</a>
+      #venueVenue</a>
+      #programmeProgramme</a>
+      #registrationRegistration</a>
+    </nav>
   </div>
+
 
   <!-- ===== Hero ===== -->
   <section class="hero" aria-labelledby="hero-title">
