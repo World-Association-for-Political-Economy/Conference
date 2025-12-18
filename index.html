@@ -2,22 +2,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Meta -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WAPE Annual Conference — Aug 5–7 2026 | University of Greenwich, London</title>
-  <meta name="description" content="World Association for Political Economy Annual Conference, August 5–7 at the University of Greenwich, London. Join scholars and practitioners for panels, keynotes, and networking.">
+  <title>WAPE Conference — Test Render</title>
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="WAPE Annual Conference — Aug 5–7 2026 | University of Greenwich">
-  <meta property="og:description" content="Annual meeting of the World Association for Political Economy. University of Greenwich, London.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://your-org.github.io/Conference/">
-  <meta property="og:image" content="https://your-org.github.io/Conference/assets/og-image.jpg">
-
-  <!-- Favicon -->
+  <!-- Ensure this tag is complete, or the head parsing will break -->
   assets/favicon.png
 
+  <!-- Styles MUST be inside a proper <style> tag -->
   <style>
     /* ===== Base & Theme ===== */
     *, *::before, *::after { box-sizing: border-box; }
@@ -47,146 +39,27 @@
     }
     .nav { height: 72px; display: flex; align-items: center; justify-content: space-between; }
     .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: 0.3px; }
-    .brand img { width: 96px; height: 96px; border-radius: 4px; }
+    .brand img { width: 48px; height: 48px; border-radius: 4px; }
     .brand span { color: var(--primary); }
     .nav-links { display: flex; gap: 22px; align-items: center; }
     .nav-links a { color: #334155; font-weight: 500; }
     .nav-links a:hover { color: var(--primary); }
     .cta-btn {
-      background: var(--primary);
-      color: #fff;
-      padding: 10px 14px;
-      border-radius: 8px;
-      font-weight: 600;
-      border: none;
-      cursor: pointer;
-      box-shadow: var(--shadow);
+      background: var(--primary); color: #fff; padding: 10px 14px; border-radius: 8px;
+      font-weight: 600; border: none; cursor: pointer; box-shadow: var(--shadow);
     }
     .cta-btn:hover { background: var(--primary-600); }
-
-    .menu-toggle { display: none; background: transparent; border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px; }
-    .menu-toggle span { display: block; width: 22px; height: 2px; background: #17202a; margin: 5px 0; }
 
     /* ===== Hero ===== */
     .hero {
       background: linear-gradient(180deg, #f3f7ff, #ffffff 70%);
-      padding: 96px 0 64px;
+      padding: 48px 0;
     }
-    .hero-inner { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; }
-    .eyebrow { color: var(--primary); font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; }
-    .hero h1 { font-size: clamp(32px, 4.2vw, 48px); margin: 6px 0 12px; color: var(--primary); }
-    .hero p { color: #475569; font-size: 18px; line-height: 1.6; }
-    .hero-actions { display: flex; gap: 14px; margin-top: 22px; flex-wrap: wrap; }
-    .ghost-btn {
-      padding: 10px 14px;
-      border: 1px solid #cbd5e1;
-      border-radius: 8px;
-      font-weight: 600;
-      color: #17202a;
-      background: #fff;
-    }
-    .ghost-btn:hover {
-      border-color: var(--primary);
-      color: var(--primary);
-    }
-    .hero .container > div:first-child { max-width: 640px; }
-
-    .hero-card {
-      border: 1px solid var(--border); border-radius: 12px; padding: 18px; background: #fff; box-shadow: var(--shadow);
-    }
-    .hero-card h3 { margin-top: 0; color: var(--primary); }
-    .stat { display: grid; grid-template-columns: auto 1fr; gap: 8px 14px; align-items: center; margin: 12px 0; }
-    .stat .num { font-size: 24px; font-weight: 700; color: var(--primary); }
-
-    /* ===== Sections ===== */
-    .section { padding: 72px 0; }
-    .section h2 { font-size: clamp(24px, 3.2vw, 34px); margin-bottom: 12px; color: var(--primary); }
-    .section p.lead { color: var(--muted); margin-top: 0; }
-
-    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 24px; }
-    .card { border: 1px solid var(--border); border-radius: 12px; padding: 18px; background: #fff; box-shadow: var(--shadow); }
-    .card h3 { margin: 0 0 8px; color: var(--primary); }
-    .card p { color: var(--muted); }
-
-    /* ===== Venue strip ===== */
-    .venue-strip {
-      background: #f1f5f9;
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      padding: 32px 0;
-    }
-    .venue-strip img {
-      border-radius: 12px;
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-    }
-
-    /* ===== Map (responsive embed) ===== */
-    .map-wrap {
-      margin-top: 24px;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      background: #fff;
-    }
-    .map-aspect {
-      position: relative;
-      width: 100%;
-      padding-top: 56.25%; /* 16:9 aspect ratio */
-    }
-    .map-aspect iframe {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-    .map-caption {
-      padding: 12px 16px;
-      color: var(--muted);
-      font-size: 14px;
-      border-top: 1px solid var(--border);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-    .map-caption a {
-      color: var(--primary);
-      font-weight: 600;
-    }
-    .map-caption a:hover { color: var(--primary-600); text-decoration: underline; text-decoration-thickness: 2px; }
-
-    /* ===== Footer ===== */
-    footer { border-top: 1px solid var(--border); padding: 28px 0; color: var(--muted); }
-    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 22px; }
-    .footer-grid h4 { margin: 0 0 10px; color: #17202a; }
-    .small { font-size: 14px; }
-    footer a { color: #334155; }
-    footer a:hover { color: var(--primary); text-decoration: underline; text-decoration-thickness: 2px; }
-
-    /* ===== Responsive ===== */
-    @media (max-width: 980px) {
-      .hero-inner { grid-template-columns: 1fr; }
-      .grid-3 { grid-template-columns: 1fr 1fr; }
-      .footer-grid { grid-template-columns: 1fr 1fr; }
-      .hero .container > div:first-child { max-width: 700px; }
-    }
-    @media (max-width: 640px) {
-      .nav-links { display: none; }
-      .menu-toggle { display: inline-flex; }
-      .grid-3 { grid-template-columns: 1fr; }
-      .footer-grid { grid-template-columns: 1fr; }
-      .brand span { font-size: 16px; }
-    }
+    .hero h1 { margin: 0 0 12px; color: var(--primary); }
+    .hero p { color: #475569; }
   </style>
 </head>
 <body>
-  <!-- ===== Header / Nav ===== -->
   <header role="banner">
     <div class="container nav">
       <!-- Brand -->
@@ -195,249 +68,19 @@
         <span>WAPE Annual Conference 2026</span>
       </a>
 
-      <!-- Navigation -->
-      <nav aria-label="Primary">
-        <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </button>
-        <div class="nav-links">
-          #cfpCall for Papers</a>
-          <a href="#e</a>
-          #programmeProgramme</a>
-          #registrationRegister</a>
-        </div>
+      <nav aria-label="Primary" class="nav-links">
+        #cfpCall for Papers</a>
+        #venueVenue</a>
+        #programmeProgramme</a>
+        #registrationRegister</a>
       </nav>
     </div>
   </header>
 
-  <!-- ===== Mobile Menu ===== -->
-  <div id="mobile-menu" hidden>
-    <div class="container" style="padding:12px 20px; border-bottom:1px solid var(--border);">
-      <div style="display:flex; flex-direction:column; gap:12px;">
-        #cfpCall for Papers</a>
-        #venueVenue</a>
-        #programmeProgramme</a>
-        #registrationRegistration</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- ===== Hero ===== -->
-  <section class="hero" aria-labelledby="hero-title">
-    <div class="container hero-inner">
-      <div>
-        <div class="eyebrow">August 5–7 · University of Greenwich · London</div>
-        <h1 id="hero-title">WAPE Annual Conference</h1>
-        <p>
-          Join scholars, students, and practitioners for three days of keynotes, panels, and networking
-          at the historic Greenwich campus overlooking the Thames. Explore political economy across disciplines,
-          regions, and methods with a focus on contemporary global challenges.
-        </p>
-        <div class="hero-actions">
-          #registrationRegister now</a>
-          <a href="#cfp" class="ghost       </div>
-      </div>
-
-      <aside class="hero-card" aria-label="Conference highlights">
-        <h3>Highlights</h3>
-        <div class="stat"><div class="num">300+</div><div>Participants</div></div>
-        <div class="stat"><div class="num">40+</div><div>Panels &amp; Roundtables</div></div>
-        <div class="stat"><div class="num">3</div><div>Keynote Lectures</div></div>
-        <p class="small" style="color:var(--muted); margin-top:10px;">
-          Streams include international political economy, development, labour, finance, and policy.
-        </p>
-      </aside>
+  <section class="hero">
+    <div class="container">
+           <h1>Test: Styles should render</h1>
+      <p>If you see navy headings, a sticky header, and styled links, CSS is working.</p>
     </div>
   </section>
-
-  <!-- ===== Call for Papers ===== -->
-  <section id="cfp" class="section" aria-labelledby="cfp-title">
-    <div class="container">
-      <h2 id="cfp-title">Call for Papers</h2>
-      <p class="lead">We welcome submissions across the breadth of political economy.</p>
-      <div class="grid-3">
-        <div class="card">
-          <h3>Topics</h3>
-          <p>International political economy, development, inequality, labour, finance, environment, digital platforms, and policy.</p>
-        </div>
-        <div class="card">
-          <h3>Submission</h3>
-          <p>Abstracts (250–300 words) with keywords. Indicate stream and format (paper, panel, roundtable).</p>
-          <p class="small">
-            #registrationSubmit via registration portal →</a>
-          </p>
-        </div>
-        <div class="card">
-          <h3>Key Dates</h3>
-          <ul class="small" style="margin:0; padding-left:18px; color:var(--muted);">
-            <li>Abstract deadline: <strong>May 15</strong></li>
-            <li>Decisions: <strong>June 10</strong></li>
-            <li>Final programme: <strong>July 10</strong></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Venue ===== -->
-  <section id="venue" class="section" aria-labelledby="venue-title">
-    <div class="container">
-      <h2 id="venue-title">Venue — University of Greenwich (Greenwich Campus)</h2>
-      <p class="lead">A UNESCO World Heritage setting on the River Thames, easily accessible via DLR and rail.</p>
-      <div class="grid-3">
-        <div class="card">
-          <h3>Location</h3>
-          <p>Old Royal Naval College, Greenwich, London SE10 9LS. Main sessions in Business School buildings.</p>
-          <p class="small">
-            <a href="https://maps.google.com?q=University+ofh+Greenwich+CampusOpen in Google Maps →</a>
-          </p>
-        </div>
-        <div class="card">
-          <h3>Travel</h3>
-          <p>DLR to Cutty Sark, rail to Greenwich, Thames Clippers boat service. Central London 20–30 minutes.</p>
-        </div>
-        <div class="card">
-          <h3>Accommodation</h3>
-          <p>Hotels in Greenwich, Deptford, Canary Wharf; limited campus rooms. Book early in summer season.</p>
-        </div>
-      </div>
-
-      <!-- Embedded, responsive venue map -->
-      <div class="map-wrap" aria-labelledby="map-title">
-        <div class="map-aspect">
-          <iframe
-            title="University of Greenwich (Greenwich Campus) map"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d992.7170632610943!2d0.0086!3d51.4820!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760278f3b4c1af%3A0x9b6f2a3fdc8a2e3d!2sUniversity%20of%20Greenwich%20-%20Greenwich%20Campus!5e0!ld Royal Naval College, SE10 9LS)</span>
-          <a href="https://maps.google.com?q=University+of+Greenwich+Greenwich+Campus"r map →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Venue Strip ===== -->
-  <div class="venue-strip" aria-label="Greenwich campus image">
-    <div class="container">
-      assets/greenwich.jpg
-    </div>
-  </div>
-
-  <!-- ===== Programme ===== -->
-  <section id="programme" class="section" aria-labelledby="programme-title">
-    <div class="container">
-      <h2 id="programme-title">Programme (Draft)</h2>
-      <p class="lead">A mix of keynotes, parallel sessions, and thematic roundtables.</p>
-
-      <div class="grid-3">
-        <div class="card">
-          <h3>Day 1 — Tue, Aug 5</h3>
-          <ul class="small" style="margin:0; padding-left:18px; color:var(--muted);">
-            <li>09:30 Opening &amp; Keynote</li>
-            <li>11:00 Parallel Sessions A</li>
-            <li>14:00 Roundtables</li>
-            <li>17:30 Welcome Reception</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Day 2 — Wed, Aug 6</h3>
-          <ul class="small" style="margin:0; padding-left:18px; color:var(--muted);">
-            <li>09:30 Keynote</li>
-            <li>11:00 Sessions B</li>
-            <li>14:00 Policy Forum</li>
-            <li>19:00 Conference Dinner</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Day 3 — Thu, Aug 7</h3>
-          <ul class="small" style="margin:0; padding-left:18px; color:var(--muted);">
-            <li>09:30 Sessions C</li>
-            <li>12:30 Closing Plenary</li>
-            <li>14:00 Campus Tours</li>
-          </ul>
-        </div>
-      </div>
-
-      <p class="small" style="color:var(--muted); margin-top:16px;">
-        Detailed programme with speakers and rooms will be published after acceptance decisions.
-      </p>
-    </div>
-  </section>
-
-  <!-- ===== Registration ===== -->
-  <section id="registration" class="section" aria-labelledby="reg-title">
-    <div class="container">
-      <h2 id="reg-title">Registration</h2>
-      <p class="lead">Early-bird rates available. Reduced fees for students and Global South scholars.</p>
-
-      <div class="grid-3">
-        <div class="card">
-          <h3>Fees</h3>
-          <ul class="small" style="margin:0; padding-left:18px; color:var(--muted);">
-            <li>Early-bird (until June 20): £XXX</li>
-            <li>Standard: £XXX</li>
-            <li>Student/Concession: £XXX</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>What’s Included</h3>
-          <p>Access to all sessions, conference materials, refreshments, and reception. Dinner optional add-on.</p>
-        </div>
-        <div class="card">
-          <h3>Register Online</h3>
-          <p>Secure payment and abstract submission via the portal.</p>
-          <p class="small">
-            <a href="https://example.com/registration" target portal →</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Footer ===== -->
-  <footer role="contentinfo">
-    <div class="container footer-grid">
-      <div>
-        <h4>Contact</h4>
-        <p class="small">
-          mailto:conference@wape.exampleEmail: conference@wape.example</a>
-        </p>
-        <p class="small">Host: University of Greenwich, London</p>
-      </div>
-      <div>
-        <h4>Quick Links</h4>
-        <p class="small">#cfpCall for Papers</a></p>
-        <p class="small">#venueVenue</a></p>
-        <p class="small">#programmeProgramme</a></p>
-        <p class="small">#registrationRegistration</a></p>
-      </div>
-      <div>
-        <h4>Follow</h4>
-        <p class="small">https://twitter.com/Twitter/X</a></p>
-        <p class="small">https://www.linkedin.com/LinkedIn</a></p>
-        <p class="small">#More →</a></p>
-      </div>
-    </div>
-    <div class="container" style="margin-top:10px;">
-      <p class="small">© <span id="year"></span> WAPE. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    // Year in footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Mobile menu toggle (accessible)
-    const toggle = document.querySelector('.menu-toggle');
-    const menu = document.getElementById('mobile-menu');
-    if (toggle && menu) {
-      toggle.addEventListener('click', () => {
-        const expanded = toggle.getAttribute('aria-expanded') === 'true';
-        toggle.setAttribute('aria-expanded', String(!expanded));
-        menu.hidden = expanded;
-      });
-    }
-  </script>
 </body>
-</html>
-``
