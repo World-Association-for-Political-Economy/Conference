@@ -132,6 +132,30 @@
       line-height: 1.55;
     }
 
+    /* Style for ALL paragraphs in cards */
+    .card p {
+      color: var(--muted); /* #5f6a72 */
+      line-height: 1.55;
+      margin-bottom: 1em;
+    }
+    
+      /* Style for ALL list items in cards */
+      .card ul {
+        color: var(--muted); /* #5f6a72 */
+        padding-left: 1.2em;
+        margin-bottom: 1em;
+      }
+      
+      .card li {
+        color: var(--muted); /* #5f6a72 */
+        margin-bottom: 0.5em;
+      }
+      
+      /* Optional: Keep bullet colors consistent */
+      .card li::marker {
+        color: #1a472a; /* Dark green */
+      }
+
 
     /* ===== Sections ===== */
     .section { padding: 24px 0; } /* Changed from padding: 72px 0 ; (reduced top padding) */
@@ -141,12 +165,10 @@
     .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 24px; }
     .card { border: 1px solid var(--border); border-radius: 12px; padding: 18px; background: #fff; box-shadow: var(--shadow); }
     .card h3 { margin: 0 0 8px; color: var(--primary); 
-    .card p { color: var(--muted);}
    
     .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 24px; }
     .card { border: 1px solid var(--border); border-radius: 12px; padding: 18px; background: #fff; box-shadow: var(--shadow); }
     .card h3 { margin: 0 0 8px; color: var(--primary); }
-    .card p { color: var(--muted); }
 
     /* ===== Venue strip ===== */
     .venue-strip {
