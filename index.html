@@ -45,6 +45,7 @@
     :root {
       --primary: #01033C;       /* UoG deep navy (brand blue) */
       --primary-600: #000A2A;   /* darker hover/active shade */
+      --primary-light: #1A1F8C; /* lighter blue for buttons */
       --muted: #5f6a72;         /* body copy gray */
       --border: #e5e7eb;        /* light gray borders */
       --maxw: 1100px;
@@ -70,7 +71,7 @@
     .nav-links a { color: #334155; font-weight: 500; }
     .nav-links a:hover { color: var(--primary); }
     .cta-btn {
-      background: var(--primary);
+      background: var(--primary-light);
       color: #fff;
       padding: 10px 14px;
       border-radius: 8px;
@@ -79,8 +80,15 @@
       cursor: pointer;
       box-shadow: var(--shadow);
     }
-    .cta-btn:hover { background: var(--primary-600); }
-
+    .cta-btn:hover { background: var(--primary); } /* Darker on hover */
+    .ghost-btn {
+      padding: 10px 14px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-weight: 600;
+      color: #17202a;
+      background: #fff;
+    }
     .menu-toggle { display: none; background: transparent; border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px; }
     .menu-toggle span { display: block; width: 22px; height: 2px; background: #17202a; margin: 5px 0; }
 
@@ -90,7 +98,7 @@
       padding: 48px 0 1px; /* Changed from padding: 96px 0 64px; (reduced bottom padding) */
     }
     .hero-inner { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; }
-    .eyebrow { color: var(--primary); font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; }
+    .eyebrow { color: var(--primary); font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; margin-bottom: 20px !important; }
     .hero h1 { font-size: clamp(32px, 4.2vw, 48px); margin: 6px 0 12px; color: var(--primary); }
     .hero p { color: #475569; font-size: 18px; line-height: 1.6; }
     .hero-actions { display: flex; gap: 14px; margin-top: 22px; flex-wrap: wrap; }
@@ -119,13 +127,18 @@
       text-transform: uppercase;
     }
 
-    .hero h4 {
-      margin-bottom: 4px;
+   .hero h4 {
+      margin-top: 0 !important;
+      margin-bottom: 16px !important;
+      font-size: 20px !important;
+      font-weight: 600 !important;
     }
     
     .hero h2 {
-      margin-top: 4px;
-    }
+      margin-top: 0 !important;
+      margin-bottom: 36px !important;
+      line-height: 1.15 !important;
+    }  
     
     .hero p {
       font-size: 16px;
@@ -338,8 +351,8 @@
           translator of the Smith’s works and first principal of Beijing University, Yan Fu, studied. </p>
         <p>We invite scholars, researchers, activists, and practitioners to submit their papers for consideration.</p>
         <div class="hero-actions">
-          #registrationRegister now</a>
-          #cfpSubmit your paper</a>
+          <a href="#registration" class="cta-btn">Register now</a>
+          <a href="#cfp" class="ghost-btn">Submit your paper</a>
         </div>
       </div>
 
