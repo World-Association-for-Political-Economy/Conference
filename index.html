@@ -261,6 +261,21 @@
     }
     .map-caption a:hover { color: var(--primary-600); text-decoration: underline; text-decoration-thickness: 2px; }
 
+    /* Archived CFP collapsible styling */
+    details#cfp summary {
+      cursor: pointer;
+      user-select: none;
+    }
+    
+    details#cfp summary::-webkit-details-marker {
+      display: none;
+    }
+    
+    details#cfp[open] summary div div span:last-child {
+      transform: rotate(180deg);
+      display: inline-block;
+    }
+    
     /* ===== Footer ===== */
     footer { border-top: 1px solid var(--border); padding: 28px 0; color: var(--muted); }
     .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 22px; }
@@ -304,9 +319,10 @@
           <span></span><span></span><span></span>
         </button>
         <div class="nav-links">
-          <a href="#cfp">Call for Papers</a>
+          <a href="#keynotes">Keynotes</a>
           <a href="#venue">Venue</a>
           <a href="#programme">Programme</a>
+          <a href="#committees">Committees</a>
           <a href="#registration" class="cta-btn">Register</a>
         </div>
       </nav>
@@ -317,9 +333,10 @@
   <div id="mobile-menu" hidden>
     <div class="container" style="padding:12px 20px; border-bottom:1px solid var(--border);">
       <div style="display:flex; flex-direction:column; gap:12px;">
-        <a href="#cfp">Call for Papers</a>
+        <a href="#keynotes">Keynotes</a>
         <a href="#venue">Venue</a>
         <a href="#programme">Programme</a>
+        <a href="#committees">Committees</a>
         <a href="#registration">Registration</a>
       </div>
     </div>
@@ -397,59 +414,105 @@
           and pluripolarity.</p>
     </div>
   </section>
-        
-  <!-- ===== Call for Papers ===== -->
-  <section id="cfp" class="section" aria-labelledby="cfp-title">
+
+  <!-- ===== Keynote Speakers (Side-by-Side) ===== -->
+  <section id="keynotes" class="section" aria-labelledby="keynotes-title">
     <div class="container">
-      <h2 id="cfp-title">Call for Papers</h2>
-      <p class="lead">We welcome papers, panels and roundtables that address theoretical, empirical, or policy-oriented 
-        dimensions of the intimately related questions on the themes discussed above and listed below. </p>
+      <h2 id="keynotes-title">Keynote Speakers</h2>
+    
       <div class="grid-2">
-        <div class="card">
-          <h3>Topics</h3>      
-          <ul style="margin:0; padding-left:18px; color:var(--muted);">
-              <li>Adam Smith’s significance for modern thought</li>
-              <li>The relation of Marx and his successors with Smith</li>
-              <li>The geopolitical economy of the age of capital</li> 
-              <li>The political economy of development</li>
-              <li>Advancing productive powers in a multipolar world</li>
-              <li>Modern Forces of Production, Artificial Intelligence, Noonomy, and the Creative Economy</li>
-              <li>The negative effects of the dollar as a world currency and of USD-backed stablecoins</li>
-              <li>The significance and impact of China’s recent policy initiatives (such as the Global Governance Initiative)</li>
-              <li>The role of socialism in the political and geopolitical economy of capitalism</li>
-              <li>The emerging role of organisations anddstructures such as BRICS and the Shanghai Cooperation Organisation</li>
-              <li>The role of regional blocs and institutions in shaping multipolar governance</li>
-              <li>The ecological challenge and resource politics in a multipolar world</li>
-              <li>Shifts in labour relations and production systems under multipolarity</li>
-              <li>International production networks</li> 
-              <li>Livelihoods world-wide and the "Death Line" for the American People</li>
-              <li>Contemporary forms of Hegemonism, Imperialism, Colonialism, and Racism</li>
-              <li>Upholding Integrity and Innovating Marxist Political Economy Through International Cooperation</li>
-              <li>Studies on the International Schools of Innovative Marxism</li>
-              <li>Macroeconomic modelling</li>
-          </ul>
+        <!-- Keynote 1 -->
+        <div class="card" style="padding: 24px;">
+          <img src="assets/dogan-gocmen.jpg" 
+               alt="Prof. Doğan Göçmen" 
+               style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 16px auto; display: block; border: 3px solid var(--primary);">
+          <h3 style="color: var(--primary); margin: 0 0 4px 0; text-align: center; font-size: 20px;">Prof. Doğan Göçmen</h3>
+          <p style="font-weight: 600; color: #1a472a; margin: 0 0 16px 0; text-align: center;">Dokuz Eylül University</p>
+          <details>
+            <summary style="cursor: pointer; color: var(--primary); font-weight: 600; text-align: center; list-style: none;">Read biography →</summary>
+            <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 13px; line-height: 1.5;">
+              <p>Doğan Göçmen is a Professor of Philosophy at Dokuz Eylul University. He received his PhD from the University of Edinburgh. His research interests include modern philosophy, classical German philosophy, political philosophy, and the history of political economy, with emphasis on Adam Smith, Kant, Hegel, and Marx. He has published over 180 academic works and serves on multiple editorial boards.</p>
+            </div>
+          </details>
         </div>
-        <div class="card">
-          <h3>Submission</h3>
-          <p>Abstracts (250–300 words) with keywords. Indicate stream and format (paper, panel, roundtable).</p>
-          <p>Please include a brief biography (up to 150 words), highlighting your academic affiliation and key research interests.</p>
-          <p>Papers selected for presentation will be eligible for consideration in WAPE-affiliated journals 
-            (World Review of Political Economy, International Critical Thought, World Marxist Review).</p>
-          <p class="small">
-            <a href="https://cmt3.research.microsoft.com/WAPE2026/Track/1/Submission/Create" target="_blank" rel="noopener noreferrer" class="ghost-btn">Submit Abstract via conference manager →</a>
-          </p>
-          <h3>Key Dates</h3>
-          <ul style="margin:0; padding-left:18px; color:var(--muted);">
-            <li>Abstract deadline: <strong>March 15</strong></li>
-            <li>Decisions: <strong>April 2</strong></li>
-            <li>Extended Abstract deadline: <strong>April 15</strong></li>
-            <li>Late Decisions: <strong>April 30</strong></li>
-            <li>Final programme: <strong>July 10</strong></li>
-          </ul>
+  
+        <!-- Keynote 2 -->
+        <div class="card" style="padding: 24px;">
+          <img src="assets/jian-xinhua.jpg" 
+               alt="Prof. Jian Xinhua" 
+               style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 16px auto; display: block; border: 3px solid var(--primary);">
+          <h3 style="color: var(--primary); margin: 0 0 4px 0; text-align: center; font-size: 20px;">Prof. Jian Xinhua</h3>
+          <p style="font-weight: 600; color: #1a472a; margin: 0 0 16px 0; text-align: center;">Wuhan University</p>
+          <details>
+            <summary style="cursor: pointer; color: var(--primary); font-weight: 600; text-align: center; list-style: none;">Read biography →</summary>
+            <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 13px; line-height: 1.5;">
+              <p>Jian Xinhua is a Professor at Wuhan University and Nanchang University. He is a recipient of the Special Government Allowance from the State Council of China and has led over 20 major research projects. He has published over 400 articles and received the "World Marxian Economics Award" from WAPE.</p>
+            </div>
+          </details>
         </div>
       </div>
     </div>
   </section>
+        
+  <!-- ===== Call for Papers (Archived - Collapsible) ===== -->
+  <details id="cfp" class="section" style="margin: 0 0 24px 0;">
+    <summary style="cursor: pointer; list-style: none; display: inline-block;">
+      <div style="display: inline-flex; align-items: center; gap: 8px; background: #f1f5f9; padding: 8px 20px; border-radius: 40px; font-weight: 600; color: var(--primary);">
+        <span>📄</span> Call for Papers (Archived — closed)
+        <span style="font-size: 18px;">▼</span>
+      </div>
+    </summary>
+    <div class="container" style="margin-top: 24px;">
+      <div class="card" style="background: #fefce8; border-left: 4px solid #eab308;">
+        <p style="margin-bottom: 0;"><strong>📅 Submission deadline has passed.</strong> The call for papers closed on March 15, 2026. This information is preserved for reference only.</p>
+      </div>
+      
+      <h2 id="cfp-title" style="margin-top: 32px;">Call for Papers (Archived)</h2>
+      <p class="lead">We welcome papers, panels and roundtables that address theoretical, empirical, or policy-oriented dimensions of the intimately related questions on the themes discussed above and listed below.</p>
+      
+      <div class="grid-2">
+        <div class="card">
+          <h3>Topics</h3>      
+          <ul style="margin:0; padding-left:18px; color:var(--muted);">
+            <li>Adam Smith's significance for modern thought</li>
+            <li>The relation of Marx and his successors with Smith</li>
+            <li>The geopolitical economy of the age of capital</li> 
+            <li>The political economy of development</li>
+            <li>Advancing productive powers in a multipolar world</li>
+            <li>Modern Forces of Production, Artificial Intelligence, Noonomy, and the Creative Economy</li>
+            <li>The negative effects of the dollar as a world currency and of USD-backed stablecoins</li>
+            <li>The significance and impact of China's recent policy initiatives</li>
+            <li>The role of socialism in the political and geopolitical economy of capitalism</li>
+            <li>The emerging role of organisations and structures such as BRICS and the Shanghai Cooperation Organisation</li>
+            <li>The role of regional blocs and institutions in shaping multipolar governance</li>
+            <li>The ecological challenge and resource politics in a multipolar world</li>
+            <li>Shifts in labour relations and production systems under multipolarity</li>
+            <li>International production networks</li> 
+            <li>Livelihoods world-wide and the "Death Line" for the American People</li>
+            <li>Contemporary forms of Hegemonism, Imperialism, Colonialism, and Racism</li>
+            <li>Upholding Integrity and Innovating Marxist Political Economy Through International Cooperation</li>
+            <li>Studies on the International Schools of Innovative Marxism</li>
+            <li>Macroeconomic modelling</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Submission (Closed)</h3>
+          <p><strong>Abstract deadline: March 15, 2026 (passed)</strong></p>
+          <p>Abstracts (250–300 words) with keywords. Indicate stream and format (paper, panel, roundtable).</p>
+          <p>Papers selected for presentation will be eligible for consideration in WAPE-affiliated journals 
+            (World Review of Political Economy, International Critical Thought, World Marxist Review).</p>
+          <h3>Key Dates (Archive)</h3>
+          <ul style="margin:0; padding-left:18px; color:var(--muted);">
+            <li>Abstract deadline: <strong>March 15, 2026 (closed)</strong></li>
+            <li>Decisions: <strong>April 2, 2026</strong></li>
+            <li>Extended Abstract deadline: <strong>April 15, 2026</strong></li>
+            <li>Late Decisions: <strong>April 30, 2026</strong></li>
+            <li>Final programme: <strong>July 10, 2026</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </details>
 
   <!-- ===== Venue ===== -->
   <section id="venue" class="section" aria-labelledby="venue-title">
@@ -647,9 +710,12 @@
       <div>
         <h4>Quick Links</h4>
         <p class="small"><a href="#cfp">Call for Papers</a></p>
+        <p class="small"><a href="#keynotes">Keynotes</a></p>
         <p class="small"><a href="#venue">Venue</a></p>
         <p class="small"><a href="#programme">Programme</a></p>
+        <p class="small"><a href="#committees">Committees</a></p>
         <p class="small"><a href="#registration">Registration</a></p>
+        <p class="small"><a href="#cfp" style="opacity: 0.6;">📄 Archived CFP</a></p>
       </div>
       <div>
         <h4>Follow</h4>
